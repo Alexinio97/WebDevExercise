@@ -1,0 +1,2 @@
+# WebDevExercise
+## Django - Python exercise
