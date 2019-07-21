@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<head>
+    <script src="main.js"></script>
+    <title>Sorting Alghoritms</title>
+</head>
+<body bgcolor="#E9967A">
+    
+    <h1 align="center">Sorting Page</h1>
+    <div style="float:left;">
+    <table border="2">
+        <tr>
+            <td>Add the high limit number for array</td>
+            <td><input type="text" placeholder="number" id="number"></td>
+        </tr>
+        <tr>
+            <td align="center"><input type="button" name="Add" value="Generate random array" onclick="generateArray()"></td>
+            <td><input type="button" name="Delete" value="Empty list" onclick="emptyList()"></td>
+        </tr>
+        <tr>
+            <td>Which type of sorting do you want?</td>
+            <td >
+                <li style="list-style: none;">
+                    <ul><input type="button" name="Heap" value="HeapSort"  onclick="sortHeap()"></ul>
+                    <ul><input type="button" name="Shell" value="ShellSort"  onclick="sortShell()"></ul>
+                    <ul><input type="button" name="Quick" value="QuickSort" onclick="sortQuick()"></ul>
+                </li>
+            </td>
+        </tr>
+    </table>
+    
+        <p>The list of entered numbers: </p>
+        
+        <div id="DisplayList">
+            
+        </div>
+        <p>Sorted number list: </p>
+        <div id="SortedList">
+            
+        </div>
+    </div>
+    
+    <div style="margin-right: -50%;  text-align: center; display: inline-block;width: 100%;" >
+        <h3 id="sortType">Sorting steps</h3>
+        <div id="stepsDisplay">
+
+        </div>
+    </div>
+</body>
+</html>
